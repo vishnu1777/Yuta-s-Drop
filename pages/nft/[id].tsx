@@ -140,7 +140,7 @@ function NftDropPage({collection}: Props) {
                  {loading ? (
                         <p className='pt-2  text-xl text-green-500 animate-pulse'>Loading supply count...</p>
                  ):(
-                    <p className='pt-2 text-xl text-green-500'> {claimedSupply} / {totalSupply?.toString()} NFT's claimed</p>
+                    <p className='pt-2 text-xl text-green-500'> {claimedSupply} / {totalSupply?.toString()} NFT&apos;s claimed</p>
                  )}
                  {loading &&(
                     <div className='mt-6'>
