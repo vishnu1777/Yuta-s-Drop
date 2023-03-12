@@ -26,7 +26,7 @@ export default function Home({collections}:Props) {
         <div className='grid space-x-3   md:grid-cols-2 lg:grid-cols-3 2xl:grid:cols-4'>
           {collections.map((collection)=>(
             <Link href={`/nft/${collection.slug.current}`}>
-            <div className='flex  flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105'>
+            <div key={collection._id} className='flex  flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105'>
               <img 
               className='h-96 w-60 rounded-2xl opacity-100 object-cover'
               src={urlFor(collection.mainImage).url()} alt="collection-image" />
