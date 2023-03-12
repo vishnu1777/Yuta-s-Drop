@@ -21,7 +21,7 @@ export default function Home({collections}:Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1 className='mb-10 text-4xl flex flex-col items-center text-white font-extralight'><span className='font-extrabold animate-bounce'>Yuta's</span> Nft Market Place </h1>
+      <h1 className='mb-10 text-4xl flex flex-col items-center text-white font-extralight'><span className='font-extrabold animate-bounce'>Yuta&apos;s</span> Nft Market Place </h1>
       <main className='bg-gradient-to-r from-gray-700 via-gray-900 to-black p-10 shadow-xl shadow-yellow-500/20'>
         <div className='grid space-x-3   md:grid-cols-2 lg:grid-cols-3 2xl:grid:cols-4'>
           {collections.map((collection)=>(
