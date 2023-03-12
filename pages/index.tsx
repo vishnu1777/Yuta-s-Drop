@@ -25,8 +25,8 @@ export default function Home({collections}:Props) {
       <main className='bg-gradient-to-r from-gray-700 via-gray-900 to-black p-10 shadow-xl shadow-yellow-500/20'>
         <div className='grid space-x-3   md:grid-cols-2 lg:grid-cols-3 2xl:grid:cols-4'>
           {collections.map((collection)=>(
-            <Link href={`/nft/${collection.slug.current}`}>
-            <div key={collection._id} className='flex  flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105'>
+            <Link key={collection._id} href={`/nft/${collection.slug.current}`}>
+            <div  className='flex  flex-col items-center cursor-pointer transition-all duration-200 hover:scale-105'>
               <img 
               className='h-96 w-60 rounded-2xl opacity-100 object-cover'
               src={urlFor(collection.mainImage).url()} alt="collection-image" />
